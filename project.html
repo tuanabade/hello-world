@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Project</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="top">
+    <div class="name">TUANA BADE SARI</div>
+    <nav>
+        <a href="index.html" class="back-btn">← Back</a>
+    </nav>
+</header>
+
+<section class="title-band">
+    <h1>SECTIONS & ELEVATIONS | 1/50</h1>
+</section>
+
+<section class="pafta">
+
+    <div class="pafta-item">
+        <img src="bb kesit.png">
+        <p>B-B SECTION</p>
+    </div>
+
+    <div class="pafta-item">
+        <img src="aa kesit.png">
+        <p>A-A SECTION</p>
+    </div>
+
+    <div class="pafta-item">
+        <img src="cc kesit.png">
+        <p>C-C SECTION</p>
+    </div>
+
+    <div class="pafta-item">
+        <img src="arka görünüş.png">
+        <p>REAR ELEVATION</p>
+    </div>
+
+    <div class="pafta-item">
+        <img src="ön görünüş.png">
+        <p>FRONT ELEVATION</p>
+    </div>
+
+    <div class="pafta-item">
+        <img src="sol görünüş.png">
+        <p>LEFT ELEVATION</p>
+    </div>
+
+</section>
+
+<section class="title-band">
+    <h1>PLANS | 1/50 & 1/20</h1>
+</section>
+
+<section class="pafta">
+
+    <div class="pafta-item">
+        <img src="bodrum 150.png">
+        <p>BASEMENT PLAN</p>
+    </div>
+
+    <div class="pafta-item">
+        <img src="zemin 150.png">
+        <p>GROUND FLOOR</p>
+    </div>
+
+    <div class="pafta-item">
+        <img src="1. kat 150.png">
+        <p>FIRST FLOOR</p>
+    </div>
+
+    <div class="pafta-item">
+        <img src="1. 120.png">
+        <p>DETAIL 1/20</p>
+    </div>
+
+    <div class="pafta-item">
+        <img src="zemin 120.png">
+        <p>DETAIL 1/20</p>
+    </div>
+
+    <div class="pafta-item">
+        <img src="bodrum 120.png">
+        <p>DETAIL 1/20</p>
+    </div>
+
+</section>
+
+</body>
+<div id="lightbox" class="lightbox">
+    <span class="back-close">← Back</span>
+    <img id="lightbox-img">
+</div>
+
+<script>
+const paftaImages = document.querySelectorAll(".pafta-item img");
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightbox-img");
+const closeBtn = document.querySelector(".back-close");
+
+paftaImages.forEach(img => {
+    img.addEventListener("click", () => {
+        lightbox.style.display = "flex";
+        lightboxImg.src = img.src;
+    });
+});
+
+closeBtn.onclick = () => {
+    lightbox.style.display = "none";
+};
+
+lightbox.onclick = (e) => {
+    if (e.target === lightbox) {
+        lightbox.style.display = "none";
+    }
+};
+</script>
+</html>

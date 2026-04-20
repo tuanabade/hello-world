@@ -1,0 +1,362 @@
+/* ===== RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f8f6f2;
+}
+
+/* ===== HEADER ===== */
+.top {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background: white;
+    border-bottom: 1px solid #eee;
+}
+
+.name {
+    font-weight: bold;
+}
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #555;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ff8a8a;
+}
+
+.btn, .back-btn {
+    background: #9bb7d4;
+    padding: 8px 15px;
+    border-radius: 20px;
+    color: white;
+}
+
+/* ===== HERO ===== */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 40px;
+    background: linear-gradient(to right, #a8c6d8, #cde3ec);
+    border-bottom-left-radius: 50% 15%;
+    border-bottom-right-radius: 50% 15%;
+}
+
+.hero-text {
+    max-width: 500px;
+}
+
+.hero h1 {
+    font-size: 36px;
+}
+
+.hero span {
+    color: #ff8a8a;
+}
+
+.cta {
+    display: inline-block;
+    margin-top: 20px;
+    background: #ffb3a7;
+    padding: 12px 20px;
+    border-radius: 25px;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.cta:hover {
+    transform: translateY(-3px);
+}
+
+/* ===== SHAPES ===== */
+.shapes {
+    position: relative;
+}
+
+.circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.white { background: white; top: -40px; left: -40px; }
+.yellow { background: #f4c542; top: 20px; left: 60px; }
+.oval { background: #ddd; width: 140px; height: 80px; border-radius: 50px; top: 60px; left: 100px; position: absolute; }
+
+/* ===== PROJECT GRID ===== */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    padding: 40px;
+}
+
+.grid-item {
+    position: relative;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: center;
+    transition: 0.3s;
+    border: 2px solid transparent;
+}
+
+.grid-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.grid-item h3 {
+    padding: 15px;
+}
+
+/* HOVER */
+.grid-item:hover {
+    transform: translateY(-10px) scale(1.02);
+    border: 2px solid #ffb3a7;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.grid-item:hover img {
+    transform: scale(1.1);
+}
+
+/* ===== ABOUT PRO ===== */
+.about {
+    padding: 100px 40px;
+}
+
+.about-container {
+    display: flex;
+    gap: 50px;
+    margin-bottom: 40px;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.highlight {
+    margin-top: 10px;
+    color: #ff8a8a;
+    font-weight: bold;
+}
+
+/* INFO BOX */
+.about-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.info-box {
+    background: linear-gradient(135deg, #ffffff, #f3f3f3);
+    padding: 20px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.info-box:hover {
+    transform: translateY(-5px);
+}
+
+/* ===== SKILLS ===== */
+.skills-bar {
+    max-width: 700px;
+    margin: auto;
+}
+
+.skill {
+    margin-bottom: 20px;
+}
+
+.bar {
+    background: #ddd;
+    height: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.fill {
+    height: 100%;
+    background: linear-gradient(to right, #ff8a8a, #ffb3a7);
+    animation: fillAnim 2s forwards;
+}
+
+.fill1 { width: 90%; }
+.fill2 { width: 75%; }
+.fill3 { width: 85%; }
+
+@keyframes fillAnim {
+    from { width: 0; }
+}
+
+/* ===== CONTACT PRO ===== */
+.contact {
+    padding: 100px 40px;
+    background: linear-gradient(to right, #f7f7f7, #eaeaea);
+}
+
+.contact-container {
+    display: flex;
+    gap: 50px;
+}
+
+.contact-left {
+    flex: 1;
+}
+
+.contact-note {
+    margin-top: 10px;
+    opacity: 0.7;
+}
+
+/* FORM */
+.contact-right {
+    flex: 1;
+}
+
+.contact-right form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-right input,
+.contact-right textarea {
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background: white;
+}
+
+.contact-right button {
+    background: linear-gradient(to right, #ff8a8a, #ffb3a7);
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-right button:hover {
+    transform: translateY(-3px);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .hero,
+    .about-container,
+    .contact-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+/* ===== TITLE BAND ===== */
+.title-band {
+    background: #b97c7c;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* ===== PAFTA GRID ===== */
+.pafta {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding: 40px;
+}
+
+/* ===== ITEM ===== */
+.pafta-item {
+    position: relative;
+    background: white;
+    padding: 12px;
+    border-radius: 12px;
+    text-align: center;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+/* IMAGE */
+.pafta-item img {
+    width: 100%;
+    height: 150px; /* 🔥 küçültüldü */
+    object-fit: contain;
+    background: #f5f5f5;
+    padding: 8px;
+    transition: 0.4s;
+}
+
+/* TEXT */
+.pafta-item p {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+/* HOVER */
+.pafta-item:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+}
+
+.pafta-item:hover img {
+    transform: scale(1.05);
+}
+
+.pafta-item:hover p {
+    color: #ff8a8a;
+}
+
+/* OVERLAY */
+.pafta-item::after {
+    content: "View Drawing 👀";
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,0.5);
+    color: white;
+    font-size: 14px;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.pafta-item:hover::after {
+    opacity: 1;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .pafta {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .pafta {
+        grid-template-columns: 1fr;
+    }
+}

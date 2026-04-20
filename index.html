@@ -1,186 +1,143 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="tr">
 <head>
-
 <meta charset="UTF-8">
-<title>Bade's Reading Journal</title>
-
-<style>
-
-body{
-background:#f6f3ef;
-font-family: Georgia, serif;
-margin:0;
-padding:0;
-color:#3a2f2f;
-}
-
-.container{
-max-width:850px;
-margin:auto;
-padding:40px;
-}
-
-header{
-margin-bottom:40px;
-}
-
-h1{
-font-size:34px;
-margin-bottom:5px;
-}
-
-.subtitle{
-color:#7a6d6d;
-}
-
-.intro{
-background:#7b3f3f;
-color:white;
-padding:25px;
-border-radius:8px;
-margin:30px 0;
-line-height:1.6;
-}
-
-.book{
-display:flex;
-background:white;
-padding:20px;
-border-radius:8px;
-margin-bottom:25px;
-box-shadow:0 3px 8px rgba(0,0,0,0.08);
-}
-
-.book img{
-width:110px;
-margin-right:20px;
-border-radius:6px;
-}
-
-.book-info h3{
-margin-top:0;
-}
-
-.rating{
-margin-top:10px;
-color:#7b3f3f;
-font-weight:bold;
-}
-
-.footer{
-margin-top:50px;
-background:#e9d7d7;
-padding:20px;
-border-radius:8px;
-}
-
-.footer a{
-color:#7b3f3f;
-text-decoration:none;
-}
-
-</style>
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tuana Bade Sarı | Portfolio</title>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<div class="container">
-
-<header>
-
-<h1>Bade's Reading Journal</h1>
-<p class="subtitle">Books I have read and my thoughts</p>
-
+<header class="top">
+    <div class="name">TUANA BADE SARI</div>
+    <nav>
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact" class="btn">Contact</a>
+    </nav>
 </header>
 
-<div class="intro">
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-text">
+        <h1>I design <span>spaces</span> & experiences</h1>
+        <p>Architecture • Structure • Atmosphere</p>
+        <a href="#projects" class="cta">Explore Projects ↓</a>
+    </div>
 
-Hi, I'm Bade.  
-This is my small reading journal where I share the books I read and my short reviews.  
-Some books inspire me deeply, while others leave mixed feelings.
+    <div class="shapes">
+        <div class="circle white"></div>
+        <div class="circle yellow"></div>
+        <div class="oval"></div>
+    </div>
+</section>
 
-</div>
+<!-- PROJECTS -->
+<section id="projects" class="grid">
 
-<h2>Recently Read</h2>
+    <a href="project.html" class="grid-item">
+        <img src="2.png">
+        <h3>Plans</h3>
+    </a>
 
-<div class="book">
+    <a href="project.html" class="grid-item">
+        <img src="1.png">
+        <h3>Sections and Elevations</h3>
+    </a>
 
-<img src="kürk mantolo madonna.jpg">
-
-<div class="book-info">
-
-<h3>Madonna in a Fur Coat</h3>
-
-<p>
-A deeply emotional novel.  
-Raif Efendi's inner world is incredibly powerful and touching.
-</p>
-
-<p class="rating">Rating: ★★★★★</p>
-
-</div>
-
-</div>
-
-
-<div class="book">
-
-<img src="simyacı.jpg">
-
-<div class="book-info">
-
-<h3>The Alchemist</h3>
-
-<p>
-A beautiful story about following your dreams.  
-Simple, inspiring and very easy to read.
-</p>
-
-<p class="rating">Rating: ★★★★☆</p>
-
-</div>
-
-</div>
+</section>
 
 
-<div class="book">
 
-<img src="wh_7ef1af605.jpg">
+</body><!-- ===== ABOUT ===== -->
+<section id="about" class="about">
 
-<div class="book-info">
+    <div class="about-container">
 
-<h3>Animal Farm</h3>
+        <!-- SOL -->
+        <div class="about-text">
+            <h2>👩‍🎨 About Me</h2>
 
-<p>
-A powerful political allegory that explains power and society in a simple but striking way.
-</p>
+            <p>
+                I’m an architecture student at Mimar Sinan Fine Arts University.
+                I design spaces that combine structure, emotion and experience.
+            </p>
 
-<p class="rating">Rating: ★★★★★</p>
+            <p class="highlight">
+                ✨ I believe architecture is not just building — it’s storytelling.
+            </p>
+        </div>
 
-</div>
+        <!-- SAĞ -->
+        <div class="about-info">
+            <div class="info-box">
+                🎓 <strong>University</strong>
+                <p>MSGSU</p>
+            </div>
 
-</div>
+            <div class="info-box">
+                📚 <strong>Year</strong>
+                <p>2nd Year</p>
+            </div>
 
+            <div class="info-box">
+                🧠 <strong>Focus</strong>
+                <p>Architecture & Design</p>
+            </div>
+        </div>
 
-<div class="footer">
+    </div>
 
-<h3>Connect With Me</h3>
+    <!-- SKILLS -->
+    <div class="skills-bar">
+        <div class="skill">
+            <p>🎨 Design</p>
+            <div class="bar"><div class="fill fill1"></div></div>
+        </div>
 
-<ul>
+        <div class="skill">
+            <p>🧱 3D Modeling</p>
+            <div class="bar"><div class="fill fill2"></div></div>
+        </div>
 
-<li>Instagram: <a href="#">@tuanabadesarii</a></li>
+        <div class="skill">
+            <p>📐 Technical Drawing</p>
+            <div class="bar"><div class="fill fill3"></div></div>
+        </div>
+    </div>
 
-</ul>
+</section>
 
-<p>© 2026 Bade's Reading Journal</p>
+<!-- ===== CONTACT ===== -->
+<section id="contact" class="contact">
 
-</div>
+    <div class="contact-container">
 
-</div>
+        <!-- SOL -->
+        <div class="contact-left">
+            <h2>💌 Let’s Connect</h2>
 
-</body>
+            <p>📧 20241301061@ogr.msgsu.edu.tr</p>
+            <p>📍 Istanbul</p>
+            <p>📷 tuanabadesarii</p>
 
+            <p class="contact-note">
+                🌿 Let’s create something meaningful together!
+            </p>
+        </div>
+
+        <!-- SAĞ -->
+        <div class="contact-right">
+            <form>
+                <input type="text" placeholder="👤 Your Name">
+                <input type="email" placeholder="📧 Your Email">
+                <textarea placeholder="✏️ Your Message"></textarea>
+                <button type="submit">🚀 Send Message</button>
+            </form>
+        </div>
+
+    </div>
+
+</section>
 </html>
