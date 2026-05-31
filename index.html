@@ -1,143 +1,151 @@
 <!DOCTYPE html>
 <html lang="tr">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tuana Bade Sarı | Portfolio</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuana Bade Sarı</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header class="top">
-    <div class="name">TUANA BADE SARI</div>
-    <nav>
-        <a href="#projects">Projects</a>
-        <a href="#about">About</a>
-        <a href="#contact" class="btn">Contact</a>
-    </nav>
-</header>
+<div id="loader">
 
-<!-- HERO -->
-<section class="hero">
-    <div class="hero-text">
-        <h1>I design <span>spaces</span> & experiences</h1>
-        <p>Architecture • Structure • Atmosphere</p>
-        <a href="#projects" class="cta">Explore Projects ↓</a>
+    <div class="loader-content">
+
+        <h1>TUANA BADE SARI</h1>
+
+        <p>ARCHITECTURE PORTFOLIO</p>
+
+        <span>MIMAR SINAN FINE ARTS UNIVERSITY </span>
+
     </div>
 
-    <div class="shapes">
-        <div class="circle white"></div>
-        <div class="circle yellow"></div>
-        <div class="oval"></div>
-    </div>
-</section>
+</div>
+    <!-- HEADER -->
 
-<!-- PROJECTS -->
-<section id="projects" class="grid">
+    <header class="top">
+<div class="portfolio-counter">
 
-    <a href="project.html" class="grid-item">
-        <img src="2.png">
-        <h3>Plans</h3>
-    </a>
+    <span>
+        PORTFOLIO EXPLORATIONS
+    </span>
 
-    <a href="project.html" class="grid-item">
-        <img src="1.png">
-        <h3>Sections and Elevations</h3>
-    </a>
+    <h2 id="projectViews">0</h2>
 
-</section>
+</div>
+        <div class="name">
+            TUANA BADE SARI
+        </div>
 
+        <nav>
 
+            <a href="about.html" class="cta">
+                About
+            </a>
 
-</body><!-- ===== ABOUT ===== -->
-<section id="about" class="about">
+            <a href="contact.html" class="cta">
+                Contact
+            </a>
 
-    <div class="about-container">
+            <a href="project.html" class="cta">
+                View Projects
+            </a>
 
-        <!-- SOL -->
-        <div class="about-text">
-            <h2>👩‍🎨 About Me</h2>
+        </nav>
 
-            <p>
-                I’m an architecture student at Mimar Sinan Fine Arts University.
-                I design spaces that combine structure, emotion and experience.
+    </header>
+
+    <!-- HERO -->
+<div class="studio-clock">
+
+    <span>
+        WORKING BETWEEN SPACE & TIME
+    </span>
+
+    <h2 id="clock"></h2>
+
+    <p id="date"></p>
+
+    <p class="location">
+        ISTANBUL, TR
+    </p>
+
+</div>
+    <section class="hero">
+<div class="architect-message">
+
+    <p id="greeting"></p>
+
+</div>
+        <div class="hero-text">
+
+            <p class="portfolio-label">
+                ARCHITECTURE PORTFOLIO 2026
             </p>
 
-            <p class="highlight">
-                ✨ I believe architecture is not just building — it’s storytelling.
+            <h1>
+                Tuana <br>
+                Bade Sarı
+            </h1>
+
+            <p class="hero-description">
+                Selected academic works exploring space,
+                structure, materiality and architectural representation.
             </p>
+
         </div>
 
-        <!-- SAĞ -->
-        <div class="about-info">
-            <div class="info-box">
-                🎓 <strong>University</strong>
-                <p>MSGSU</p>
-            </div>
-
-            <div class="info-box">
-                📚 <strong>Year</strong>
-                <p>2nd Year</p>
-            </div>
-
-            <div class="info-box">
-                🧠 <strong>Focus</strong>
-                <p>Architecture & Design</p>
-            </div>
+        <div class="hero-image">
+            <img src="WhatsApp Image 2026-05-31 at 15.47.54.jpeg"
+                 alt="Tuana Bade Sarı">
         </div>
 
-    </div>
+    </section>
 
-    <!-- SKILLS -->
-    <div class="skills-bar">
-        <div class="skill">
-            <p>🎨 Design</p>
-            <div class="bar"><div class="fill fill1"></div></div>
-        </div>
+    <!-- INTRO -->
 
-        <div class="skill">
-            <p>🧱 3D Modeling</p>
-            <div class="bar"><div class="fill fill2"></div></div>
-        </div>
+    <section class="intro">
 
-        <div class="skill">
-            <p>📐 Technical Drawing</p>
-            <div class="bar"><div class="fill fill3"></div></div>
-        </div>
-    </div>
+        <p>
+            Architecture is the relationship between people,
+            space and atmosphere. My work focuses on drawing,
+            representation and the spatial experience created
+            through structure and material.
+        </p>
 
-</section>
+    </section>
 
-<!-- ===== CONTACT ===== -->
-<section id="contact" class="contact">
+    <!-- ARCHITECT QUOTE -->
 
-    <div class="contact-container">
+    <section class="quote-mini">
 
-        <!-- SOL -->
-        <div class="contact-left">
-            <h2>💌 Let’s Connect</h2>
+        <p id="quote">
+            Less is more. — Mies van der Rohe
+        </p>
 
-            <p>📧 20241301061@ogr.msgsu.edu.tr</p>
-            <p>📍 Istanbul</p>
-            <p>📷 tuanabadesarii</p>
+        <button id="quoteBtn">
+            New Quote
+        </button>
 
-            <p class="contact-note">
-                🌿 Let’s create something meaningful together!
-            </p>
-        </div>
+    </section>
 
-        <!-- SAĞ -->
-        <div class="contact-right">
-            <form>
-                <input type="text" placeholder="👤 Your Name">
-                <input type="email" placeholder="📧 Your Email">
-                <textarea placeholder="✏️ Your Message"></textarea>
-                <button type="submit">🚀 Send Message</button>
-            </form>
-        </div>
+    <!-- FOOTER -->
 
-    </div>
+    <footer>
 
-</section>
+        <p>
+            © 2026 Tuana Bade Sarı
+        </p>
+
+    </footer>
+<button id="themeBtn" class="theme-btn">
+    Dark Mode
+</button>
+    <script src="script.js"></script>
+
+</body>
+
 </html>
